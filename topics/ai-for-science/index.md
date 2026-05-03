@@ -1,7 +1,7 @@
 ---
 aliases: ai4science, ml-for-science, artificial-intelligence-for-science
 display_name: AI for science
-related: machine-learning, deep-learning, simulation, bioinformatics, chemistry, physics, data-science
+related: machine-learning, deep-learning, simulation, bioinformatics, chemistry, physics, data-science, ai
 short_description: AI for science applies machine learning and artificial intelligence to accelerate scientific discovery across disciplines.
 topic: ai-for-science
 ---
