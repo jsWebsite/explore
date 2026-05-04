@@ -16,6 +16,10 @@ on:
       - 'topics/**'
       - 'collections/**'
 
+concurrency:
+  group: explore-triage-commenter-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
   pull-requests: write
