@@ -131,7 +131,8 @@ jobs:
 
                 for (const item of items) {
                   if (!/^[\w.-]+\/[\w.-]+$/.test(item)) {
-                    lines.push(`| \`${item}\` | – | – | – | invalid format |`);
+                    const safeItem = item.replace(/`/g, "'").replace(/\\/g, '\\\\').replace(/\|/g, '\\|');
+                    lines.push(`| \`${safeItem}\` | – | – | – | invalid format |`);
                     continue;
                   }
                   const [owner, repo] = item.split('/');
